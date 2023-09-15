@@ -43,7 +43,7 @@ namespace webapi.inlock_CodeFirst.Migrations
                     Nome = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Descricao = table.Column<string>(type: "TEXT", nullable: false),
                     DataLancamento = table.Column<DateTime>(type: "DATE", nullable: false),
-                    Preco = table.Column<decimal>(type: "Decimal(4,0)", nullable: false),
+                    Preco = table.Column<decimal>(type: "Decimal(4,2)", nullable: false),
                     IdEstudio = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>

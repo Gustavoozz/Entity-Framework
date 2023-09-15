@@ -25,7 +25,7 @@ namespace webapi.inlock_CodeFirst.Domains
         public DateTime DataLancamento { get; set; }
 
 
-        [Column(TypeName = "Decimal(4,s2)")]
+        [Column(TypeName = "Decimal(4,2)")]
         [Required(ErrorMessage = "O preço do jogo é obrigatório!")]
         public decimal Preco { get; set; }
 
